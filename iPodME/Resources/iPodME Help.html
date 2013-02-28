@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>iPodME Help</title>
+</head>
+<body>
+<h1>iPodME Help</h1>
+Quick jump to :<br>
+<ul>
+  <li><a href="#About_the_profiles">About the profiles</a></li>
+  <li><a href="#Adding_subtitles">Adding subtitles</a></li>
+  <li><a href="#Advanced_options">Advanced options</a></li>
+  <li><a href="#Troubleshooting">Troubleshooting</a><br><br></li>
+</ul>
+<h3><a name="About_the_profiles"></a>About the profiles</h3>
+iPodME offers 6 predefined profiles :&nbsp;3 different encoding speed, each with both <span style="font-style: italic;">quality</span> or <span style="font-style: italic;">size</span> option.<br>
+- <span style="font-style: italic;">quality</span> optimize the result for the best quality (resulting in bigger files)<br>
+- <span style="font-style: italic;">size</span> optimize the result for the best quality/size ratio (resulting in smaller files)<br>
+<br>
+Choosing a slower profile will result in a longer encoding time, but will also provide a better quality and most of the time smaller file size.<br>
+<br>
+If you want to customize further the encoding parameters, then use the profile <span style="font-style: italic;">custom</span>. New options will appear allowing you to define your own audio and video encoding parameters.<br>
+When using the custom profile, the <span style="font-style: italic;">additional parameters</span> field allows to specify advanced ffmpeg command-line options. See <a href="http://ffmpeg.mplayerhq.hu/ffmpeg-doc.html">ffmpeg documentation</a> for more informations about these options.<br>
+<br>
+<h3><a name="Using_subtitles"></a>Adding subtitles</h3>
+The new soft-subtitles feature will automatically add to the video files any subtitles related. You will then be able to enable or disable them on your iPod or iPhone device.<br>
+<b>Please note that soft-subtitles may not be supported on some old iPod models.</b><br>
+<br>
+In order to be added automatically, the subtitles must be in ".srt" format, have the same name as the video files and be in the same folder. They also may contain a language code suffix. Multiple subtitles per video file are also supported.<br>
+<br>
+<span style="font-style: italic;">Example :</span><br>
+If you have a video named "video.avi", you can have subtitles named "video.fr.srt", "video.en.srt" and "video.srt" for french and english languages, the language code being undetermined for the last one.<br>
+<br>
+<span style="font-style: italic;">Please note that multiple subtitles support is buggy at this time and may not work, depending on which languages codes are used.</span><br>
+<br>
+<h3><a name="Advanced_options"></a>Advanced options</h3>
+Clicking the "More options" button will bring you some advanced options :
+<ul>
+  <li><span style="font-style: italic;">Shutdown when finished</span> : once the conversion of all the video files in the list is finished, shutdown the computer.<br><br></li>
+  <li><span style="font-style: italic;">Stretch video to fit size </span>: expand the video to the chosen size, but may alter the aspect ratio of the video.<br><br></li>
+  <li><span style="font-style: italic;">Fix aspect ratio </span>: use it only if your video has a distorted aspect. It will force the output video to have a 1:1 pixel aspect ratio.<br><br></li>
+  <li><span style="font-style: italic;">Process priority</span> : change the priority of the encoder's process, allocating more or less CPU time for it.<br><br></li>
+  <li><span style="font-style: italic;">Output folder</span> : the folder where the converted files will go. You can change it by clicking the "..." button.<br><br></li>
+</ul>
+<h3><a name="Troubleshooting"></a>Troubleshooting</h3>
+<ul>
+  <li><span style="font-style: italic;">The program crashes or won't load</span> :<br>
+Install the latest version of the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5&amp;DisplayLang=en">Microsoft .NET Framework</a>.<br><br></li>
+  <li><span style="font-style: italic;">Where are the converted files ?</span><br> By default, iPodME use its own location as the ouput folder. But you can change it the the <span style="font-style: italic;">Advanced Options</span>.<br><br></li>
+  <li><span style="font-style: italic;">I can't see subtitles on my iPod</span> :<br>
+In order to see the subtitles, you need to enable them on you iPod. Check the manual to find how to do it.<br>
+If your iPod model does not support subtitles, then use iPodME version 1.2 to burn them into the video.<br><br></li>
+  <li><span style="font-style: italic;">I have strange error messages when trying to convert a video or ffmpeg says that it could not render one of the streams</span> :<br> Your video format is maybe not supported by iPodME.</li>
+</ul>
+</body>
+</html>
